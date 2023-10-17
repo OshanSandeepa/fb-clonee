@@ -1,0 +1,13 @@
+.app__body{
+
+
+  display: flex;
+
+}
+
+.app{
+
+  background-color: whitesmoke ;
+
+  height: 100vh ;
+} 
