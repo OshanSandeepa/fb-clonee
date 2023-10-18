@@ -1,12 +1,20 @@
 import React from 'react'
 import './Login.css';
+
+import { auth,provider } from './firebase'; 
 import { Button } from '@mui/material';
 function Login() {
         const SignIn = ()=>   {
 
             //sgnIn...
 
-        }
+            auth.signInWithPopup(provider)
+          .then(result =>{
+
+            console.log(result)
+          }
+          ).catch(error=>alert(error.messsage))
+        };
 
 
 
